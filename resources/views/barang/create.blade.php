@@ -13,8 +13,8 @@
             <!-- Initial form fields -->
             <div class="dynamicForm">
                 <div class="form-group row">
-                    <label class="col-1 control-label col-form-label">Kode</label>
-                    <div class="col-11">
+                    <label class="col-2 control-label col-form-label">Kode</label>
+                    <div class="col-10">
                         <select class="form-control" name="id_kode_barang[]" required>
                             <option value="">- Pilih Kode -</option>
                             @foreach($kode as $item)
@@ -27,8 +27,8 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-1 control-label col-form-label">Admin Pencatatan</label>
-                    <div class="col-11">
+                    <label class="col-2 control-label col-form-label">Admin Pencatatan</label>
+                    <div class="col-10">
                         <select class="form-control" name="id_user[]" required>
                             <option value="">- Pilih User -</option>
                             @foreach($user as $item)
@@ -41,8 +41,8 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-1 control-label col-form-label">Nama Barang</label>
-                    <div class="col-11">
+                    <label class="col-2 control-label col-form-label">Nama Barang</label>
+                    <div class="col-10">
                         <input type="text" class="form-control" name="nama_barang[]" value="{{ old('nama_barang') }}" required>
                         @error('nama_barang')
                             <small class="form-text text-danger">{{ $message }}</small>
@@ -50,8 +50,8 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-1 control-label col-form-label">NUP</label>
-                    <div class="col-11">
+                    <label class="col-2 control-label col-form-label">NUP</label>
+                    <div class="col-10">
                         <input type="number" class="form-control" name="NUP[]" value="{{ old('NUP') }}" required>
                         @error('NUP')
                             <small class="form-text text-danger">{{ $message }}</small>
@@ -59,8 +59,8 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-1 control-label col-form-label">Satuan</label>
-                    <div class="col-11">
+                    <label class="col-2 control-label col-form-label">Satuan</label>
+                    <div class="col-10">
                         <input type="text" class="form-control" name="satuan[]" value="{{ old('satuan') }}" required>
                         @error('satuan')
                             <small class="form-text text-danger">{{ $message }}</small>
@@ -68,8 +68,8 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-1 control-label col-form-label">Harga Perolehan</label>
-                    <div class="col-11">
+                    <label class="col-2 control-label col-form-label">Harga Perolehan</label>
+                    <div class="col-10">
                         <input type="text" class="form-control" name="harga_perolehan[]" value="{{ old('harga_perolehan') }}" required>
                         @error('harga_perolehan')
                             <small class="form-text text-danger">{{ $message }}</small>
@@ -77,8 +77,8 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-1 control-label col-form-label">Tanggal Pencatatan</label>
-                    <div class="col-11">
+                    <label class="col-2 control-label col-form-label">Tanggal Pencatatan</label>
+                    <div class="col-10">
                         <input type="datetime-local" class="form-control" name="tanggal_pencatatan[]" required>
                         @error('tanggal_pencatatan')
                             <small class="form-text text-danger">{{ $message }}</small>
@@ -98,8 +98,8 @@
         </div>
         <br>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label"></label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label"></label>
+            <div class="col-10">
                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
                 <a class="btn btn-sm btn-default ml-1" href="{{ url('barang') }}">Kembali</a>
             </div>

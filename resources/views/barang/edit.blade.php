@@ -16,8 +16,8 @@
             @csrf
             {!! method_field('PUT')!!}
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label">Kode</label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label">Kode</label>
+                <div class="col-10">
                     <select class="form-control" id="id_kode_barang" name="id_kode_barang" required>
                         <option value="">- Pilih Kode -</option>
                     @foreach($kode as $item)
@@ -30,8 +30,8 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label">Admin Pencatatan</label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label">Admin Pencatatan</label>
+                <div class="col-10">
                     <select class="form-control" id="id_user" name="id_user" required>
                         <option value="">- Pilih User -</option>
                     @foreach($user as $item)
@@ -44,8 +44,8 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label">Nama Barang</label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label">Nama Barang</label>
+                <div class="col-10">
                     <input type="text" class="form-control" id="nama_barang" name="nama_barang" value="{{ old('nama', $barang->nama_barang) }}" required>
                 @error('nama_barang')
                     <small class="form-text text-danger">{{ $message }}</small>
@@ -53,8 +53,8 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label">NUP</label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label">NUP</label>
+                <div class="col-10">
                     <input type="text" class="form-control" id="NUP" name="NUP" value="{{ old('NUP', $barang->NUP) }}" required>
                 @error('NUP')
                     <small class="form-text text-danger">{{ $message }}</small>
@@ -62,8 +62,8 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label">Satuan</label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label">Satuan</label>
+                <div class="col-10">
                     <input type="text" class="form-control" id="satuan" name="satuan" value="{{ old('satuan', $barang->satuan) }}" required>
                 @error('satuan')
                     <small class="form-text text-danger">{{ $message }}</small>
@@ -71,8 +71,8 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label">Harga Perolehan</label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label">Harga Perolehan</label>
+                <div class="col-10">
                     <input type="text" class="form-control" id="harga_perolehan" name="harga_perolehan" value="{{ old('harga_perolehan', $barang->harga_perolehan) }}" required>
                 @error('harga_perolehan')
                     <small class="form-text text-danger">{{ $message }}</small>
@@ -80,8 +80,8 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label">Tanggal Pencatatan</label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label">Tanggal Pencatatan</label>
+                <div class="col-10">
                     <input type="datetime-local" class="form-control" id="tanggal_pencatatan" name="tanggal_pencatatan" value="{{ old('tanggal_pencatatan', $barang->tanggal_pencatatan) }}" required>
                 @error('tanggal_pencatatan')
                     <small class="form-text text-danger">{{ $message }}</small>
@@ -89,8 +89,8 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label"></label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label"></label>
+                <div class="col-10">
                     <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
                     <a class="btn btn-sm btn-default ml-1" href="{{ url('barang') }}">Kembali</a>
                 </div>

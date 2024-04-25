@@ -9,8 +9,8 @@
         <form method="POST" action="{{ url('ruang') }}" class="form-horizontal">
         @csrf
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Kode Ruang</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Kode Ruang</label>
+            <div class="col-10">
                 <input type="text" class="form-control" id="kode_ruang" name="kode_ruang" value="{{ old('kode_ruang') }}" required>
             @error('kode_ruang')
                 <small class="form-text text-danger">{{ $message }}</small>
@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Nama Ruang</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Nama Ruang</label>
+            <div class="col-10">
                 <input type="text" class="form-control" id="nama_ruang" name="nama_ruang" value="{{ old('nama_ruang') }}" required>
             @error('nama_ruang')
                 <small class="form-text text-danger">{{ $message }}</small>
@@ -27,8 +27,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">NIP</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">NIP</label>
+            <div class="col-10">
                 <input type="number" class="form-control" id="nip" name="nip" value="{{ old('nip') }}" required>
             @error('nama_ruang')
                 <small class="form-text text-danger">{{ $message }}</small>
@@ -36,8 +36,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Penanggung Jawab</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Penanggung Jawab</label>
+            <div class="col-10">
                 <input type="text" class="form-control" id="penanggung_jawab" name="penanggung_jawab" value="{{ old('penanggung_jawab') }}" required>
             @error('penanggung_jawab')
                 <small class="form-text text-danger">{{ $message }}</small>
@@ -45,8 +45,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label"></label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label"></label>
+            <div class="col-10">
                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
                 <a class="btn btn-sm btn-default ml-1" href="{{ url('ruang') }}">Kembali</a>
             </div>

@@ -9,8 +9,8 @@
         <form method="POST" action="{{ url('kode') }}" class="form-horizontal">
         @csrf
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Kode Barang</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Kode Barang</label>
+            <div class="col-10">
                 <input type="number" class="form-control" id="kode_barang" name="kode_barang" value="{{ old('kode_barang') }}" required>
             @error('kode_barang')
                 <small class="form-text text-danger">{{ $message }}</small>
@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Deskripsi Barang</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Deskripsi Barang</label>
+            <div class="col-10">
                 <input type="text" class="form-control" id="deskripsi_barang" name="deskripsi_barang" value="{{ old('deskripsi_barang') }}" required>
             @error('deskripsi_barang')
                 <small class="form-text text-danger">{{ $message }}</small>
@@ -27,8 +27,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label"></label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label"></label>
+            <div class="col-10">
                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
                 <a class="btn btn-sm btn-default ml-1" href="{{ url('kode') }}">Kembali</a>
             </div>

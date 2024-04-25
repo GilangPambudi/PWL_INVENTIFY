@@ -16,8 +16,8 @@
             @csrf
             {!! method_field('PUT')!!}
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label">Kode Role</label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label">Kode Role</label>
+                <div class="col-10">
                     <input type="text" class="form-control" id="kode_role" name="kode_role" value="{{ old('kode_role', $role->kode_role) }}" required>
                 @error('kode_role')
                     <small class="form-text text-danger">{{ $message }}</small>
@@ -25,8 +25,8 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label">Nama Role</label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label">Nama Role</label>
+                <div class="col-10">
                     <input type="text" class="form-control" id="nama_role" name="nama_role" value="{{ old('nama_role', $role->nama_role) }}" required>
                 @error('nama_role')
                     <small class="form-text text-danger">{{ $message }}</small>
@@ -34,8 +34,8 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-1 control-label col-form-label"></label>
-                <div class="col-11">
+                <label class="col-2 control-label col-form-label"></label>
+                <div class="col-10">
                     <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
                     <a class="btn btn-sm btn-default ml-1" href="{{ url('role') }}">Kembali</a>
                 </div>

@@ -9,8 +9,8 @@
         <form method="POST" action="{{ url('distribusi') }}" class="form-horizontal">
         @csrf
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Barang</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Barang</label>
+            <div class="col-10">
                 <select class="form-control" id="id_barang" name="id_barang" required>
                     <option value="">- Pilih NUP & Barang -</option>
                 @foreach($barang as $item)
@@ -23,8 +23,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Ruang</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Ruang</label>
+            <div class="col-10">
                 <select class="form-control" id="id_ruang" name="id_ruang" required>
                     <option value="">- Pilih Ruang -</option>
                 @foreach($ruang as $item)
@@ -37,8 +37,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Status Awal</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Status Awal</label>
+            <div class="col-10">
                 <select class="form-control" id="id_detail_status_awal" name="id_detail_status_awal" required>
                     <option value="">- Pilih Status Awal -</option>
                 @foreach($statusAwal as $item)
@@ -51,8 +51,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Status Akhir</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Status Akhir</label>
+            <div class="col-10">
                 <select class="form-control" id="id_detail_status_akhir" name="id_detail_status_akhir" required>
                     <option value="">- Pilih Status Akhir -</option>
                 @foreach($statusAkhir as $item)
@@ -65,8 +65,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label"></label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label"></label>
+            <div class="col-10">
                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
                 <a class="btn btn-sm btn-default ml-1" href="{{ url('distribusi') }}">Kembali</a>
             </div>

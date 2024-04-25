@@ -9,8 +9,8 @@
         <form method="POST" action="{{ url('status') }}" class="form-horizontal">
         @csrf
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Kode Status</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Kode Status</label>
+            <div class="col-10">
                 <input type="text" class="form-control" id="kode_status" name="kode_status" value="{{ old('kode_status') }}" >
             @error('kode_status')
                 <small class="form-text text-danger">{{ $message }}</small>
@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label">Nama Status</label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label">Nama Status</label>
+            <div class="col-10">
                 <input type="text" class="form-control" id="nama_status" name="nama_status" value="{{ old('nama_status') }}">
             @error('nama_status')
                 <small class="form-text text-danger">{{ $message }}</small>
@@ -27,8 +27,8 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-1 control-label col-form-label"></label>
-            <div class="col-11">
+            <label class="col-2 control-label col-form-label"></label>
+            <div class="col-10">
                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
                 <a class="btn btn-sm btn-default ml-1" href="{{ url('status') }}">Kembali</a>
             </div>
